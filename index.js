@@ -14,3 +14,12 @@ function addNumber(a,b) {
   }
   
   console.log(addNumber(10,-2))
+
+//ECMA6 Features - Scope Variables
+var test1
+function checkScope() {
+  test1="hola"
+  return (test1) ? "test1 change in the function" : "negative number"
+  }
+  
+  console.log(checkScope())
