@@ -21,11 +21,21 @@ function checkScope() {
   test1="hola"
   return (test1) ? "test1 change in the function" : "negative number"
   }
+console.log(checkScope())
 
-  //
-  const s = [5, 6, 7];
-   //error// s = [1, 2, 3];
-    s[2] = 45;
-    console.log(s);
+//ECMA6 Features - CONTS and how do mutation and prevent
+const s = [5, 6, 7];
+  //error// s = [1, 2, 3];
+  s[2] = 45; //do Mutation
+  console.log(s);
+
+  let obj = {
+    name:"FreeCodeCamp",
+    review:"Awesome"
+  };
+  //Prevent Mutation Object.freeze(obj);
+  obj.review = "bad";
+  obj.newProp = "Test";
+  console.log(obj); 
   
-  console.log(checkScope())
+ 
