@@ -21,5 +21,11 @@ function checkScope() {
   test1="hola"
   return (test1) ? "test1 change in the function" : "negative number"
   }
+
+  //
+  const s = [5, 6, 7];
+   //error// s = [1, 2, 3];
+    s[2] = 45;
+    console.log(s);
   
   console.log(checkScope())
