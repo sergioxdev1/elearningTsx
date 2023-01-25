@@ -37,5 +37,20 @@ const s = [5, 6, 7];
   obj.review = "bad";
   obj.newProp = "Test";
   console.log(obj); 
+  //other example to prevent mutation on objects
+  function freezeObj() {
+    const MATH_CONSTANTS = {
+      PI: 3.14
+    };
+    Object.freeze(MATH_CONSTANTS);
+    try {
+      MATH_CONSTANTS.PI = 99; //generate error
+    } catch(ex) {
+      console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+  }
+  const PI = freezeObj();
+  //----------------------------------------//
   
  
