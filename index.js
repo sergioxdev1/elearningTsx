@@ -79,4 +79,10 @@ const greeting = (name = "Anonymous") => "Hello " + name;
 
 console.log(greeting("John"));
 console.log(greeting());
-//The console will display the strings Hello John and Hello Anonymous.
+//The console will display the strings Hello John and Hello Anonymous
+//When you dont declare the parameter use the default
+
+//Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
+const increment = (number=5, value=1) => number + value;
+console.log(increment());
+console.log(increment(7,2));
