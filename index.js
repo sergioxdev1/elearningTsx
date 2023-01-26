@@ -54,14 +54,22 @@ const s = [5, 6, 7];
   //----------------------------------------//
 
 //ECMA6 Features - arrow functions
+ //-----CLASSIC
 const myFunc = () => {
   const myVar = "classic func";
   return myVar;
 }
- //-----
+ //-----ARROW
 const myFunc2 = () => "arrow func";
  //-----
 console.log(myFunc());
 console.log(myFunc2());
-  
- 
+ //-----CLASSIC
+var myConcatClassic = function(arr1, arr2) {
+  return arr1.concat(arr2);
+};
+ //-----ARROW
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+ //-----
+console.log(myConcat([1, 2], [3, 4, 5]));
+console.log(myConcatClassic([1, 2], [3, 4, 5]));
