@@ -52,5 +52,16 @@ const s = [5, 6, 7];
   }
   const PI = freezeObj();
   //----------------------------------------//
+
+//ECMA6 Features - arrow functions
+const myFunc = () => {
+  const myVar = "classic func";
+  return myVar;
+}
+ //-----
+const myFunc2 = () => "arrow func";
+ //-----
+console.log(myFunc());
+console.log(myFunc2());
   
  
