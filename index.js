@@ -73,3 +73,10 @@ const myConcat = (arr1, arr2) => arr1.concat(arr2);
  //-----
 console.log(myConcat([1, 2], [3, 4, 5]));
 console.log(myConcatClassic([1, 2], [3, 4, 5]));
+
+//ECMA6 Features - Default parameters
+const greeting = (name = "Anonymous") => "Hello " + name;
+
+console.log(greeting("John"));
+console.log(greeting());
+//The console will display the strings Hello John and Hello Anonymous.
