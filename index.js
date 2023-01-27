@@ -54,6 +54,7 @@ const s = [5, 6, 7];
   //----------------------------------------//
 
 //ECMA6 Features - arrow functions
+
  //-----CLASSIC
 const myFunc = () => {
   const myVar = "classic func";
@@ -75,6 +76,8 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 console.log(myConcatClassic([1, 2], [3, 4, 5]));
 
 //ECMA6 Features - Default parameters
+console.log("** ECMA6 Features - Default parameters **")
+
 const greeting = (name = "Anonymous") => "Hello " + name;
 
 console.log(greeting("John"));
@@ -86,3 +89,11 @@ console.log(greeting());
 const increment = (number=5, value=1) => number + value;
 console.log(increment());
 console.log(increment(7,2));
+
+//ECMA6 Features - Rest parameters
+console.log("** ECMA6 Features - Rest parameters **")
+const sum = (... args) => {
+  console.log("Length parameter: "+args.length);
+  return args.reduce((a, b) => a + b, 0);
+}
+console.log(sum(1,2,3,4,5,6));
