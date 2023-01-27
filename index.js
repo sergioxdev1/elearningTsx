@@ -97,8 +97,22 @@ console.log(increment(7, 2));
 
 //ECMA6 Features - Rest parameters
 console.log('** ECMA6 Features - Rest parameters **');
+
 const sum = (...args) => {
   console.log('Length parameter: ' + args.length);
   return args.reduce((a, b) => a + b, 0);
 };
 console.log(sum(1, 2, 3, 4, 5, 6));
+
+//ECMA6 Features - Spread operator
+console.log('** ECMA6 Features - Spread operator **');
+
+//Copy all contents of arr1 into another array arr2 using the spread operator.
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+arr2 = [...arr1];  // Change this line
+console.log(arr2);
+//--
+const arr = [6, 89, 3, 45];
+const maximus = Math.max(...arr);
+console.log(maximus);
