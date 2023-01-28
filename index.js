@@ -131,3 +131,9 @@ const HIGH_TEMPERATURES = {
 const {today, tomorrow} = HIGH_TEMPERATURES;
 console.log(today+tomorrow);
 
+// ------  CLASSIC PROCESS ------------------------
+//const highToday = HIGH_TEMPERATURES.today;
+//const highTomorrow = HIGH_TEMPERATURES.tomorrow; 
+// --------- MODERN PROCESS -----------------------
+const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES
+console.log(highToday+highTomorrow);
