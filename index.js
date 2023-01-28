@@ -116,3 +116,18 @@ console.log(arr2);
 const arr = [6, 89, 3, 45];
 const maximus = Math.max(...arr);
 console.log(maximus);
+
+//ECMA6 Features - Use Destructuring Assignment to Extract Values from Objects
+console.log('** ECMA6 Features - Destructuring Assignment **');
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+// ------  CLASSIC PROCESS ------------------------
+//const today2 = HIGH_TEMPERATURES.today;
+//const tomorrow2 = HIGH_TEMPERATURES.tomorrow;
+// --------- MODERN PROCESS -----------------------
+const {today, tomorrow} = HIGH_TEMPERATURES;
+console.log(today+tomorrow);
+
