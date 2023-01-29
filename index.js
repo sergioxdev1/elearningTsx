@@ -166,3 +166,10 @@ let ax = 8, bx = 6;
 console.log(ax,bx);
 [bx,ax] = [ax,bx]
 console.log(ax,bx);
+
+//ECMA6 Features - Destructuring Assignment to Assign Variables from Arrays
+console.log('** ECMA6 Features - Destructuring via REST elements **');
+const [ay, by, ...arry] = [1, 2, 3, 4, 5, 7];
+//arry take all values rest of the array
+console.log(ay, by);
+console.log(arry);
