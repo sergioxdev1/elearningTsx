@@ -151,6 +151,6 @@ console.log('** ECMA6 Features - Destructuring Assignment 2 **');
 //const lowToday = LOCAL_FORECAST.today.low;
 //const highToday = LOCAL_FORECAST.today.high;
 // ------ ECAM 6 ------------------------
-const { today: { low: lowToday, high: highToday2 } } = LOCAL_FORECAST2;
+const { today: { low: lowToday, high: highToday2 } } = LOCAL_FORECAST;
 console.log(LOCAL_FORECAST);
 
