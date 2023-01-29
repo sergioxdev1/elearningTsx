@@ -137,3 +137,20 @@ console.log(today+tomorrow);
 // --------- MODERN PROCESS -----------------------
 const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES
 console.log(highToday+highTomorrow);
+
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+//ECMA6 Features - Use Destructuring Assignment to Assign Variables from Nested Objects
+
+console.log('** ECMA6 Features - Destructuring Assignment 2 **');
+// ------ ECMA 5 ------------------------
+//const lowToday = LOCAL_FORECAST.today.low;
+//const highToday = LOCAL_FORECAST.today.high;
+// ------ ECAM 6 ------------------------
+const { today: { low: lowToday, high: highToday2 } } = LOCAL_FORECAST2;
+console.log(LOCAL_FORECAST);
+
