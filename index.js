@@ -144,8 +144,7 @@ const LOCAL_FORECAST = {
   tomorrow: { low: 68, high: 80 }
 };
 
-//ECMA6 Features - Use Destructuring Assignment to Assign Variables from Nested Objects
-
+//ECMA6 Features - Destructuring Assignment to Assign Vars from Nested Objects
 console.log('** ECMA6 Features - Destructuring Assignment 2 **');
 // ------ ECMA 5 ------------------------
 //const lowToday = LOCAL_FORECAST.today.low;
@@ -154,3 +153,16 @@ console.log('** ECMA6 Features - Destructuring Assignment 2 **');
 const { today: { low: lowToday, high: highToday2 } } = LOCAL_FORECAST;
 console.log(LOCAL_FORECAST);
 
+//ECMA6 Features - Destructuring Assignment to Assign Variables from Arrays
+console.log('** ECMA6 Features - Destructuring Assignment 2 **');
+
+const [a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a, b);
+//move the index
+const [,,c, d,, e] = [1, 2, 3, 4, 5, 6];
+console.log(c, d, e);
+//swap values
+let ax = 8, bx = 6;
+console.log(ax,bx);
+[bx,ax] = [ax,bx]
+console.log(ax,bx);
