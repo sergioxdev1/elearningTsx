@@ -173,3 +173,17 @@ const [ay, by, ...arry] = [1, 2, 3, 4, 5, 7];
 //arry take all values rest of the array
 console.log(ay, by);
 console.log(arry);
+
+//Use Destructuring Assignment to Pass an Object as a Function's Parameters
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+//This function recive a object how paramether with max and min vars inside
+const half = ({max, min}) => (max + min) / 2.0;
+console.log(half(stats));
