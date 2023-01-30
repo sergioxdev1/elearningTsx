@@ -187,3 +187,26 @@ const stats = {
 //This function recive a object how paramether with max and min vars inside
 const half = ({max, min}) => (max + min) / 2.0;
 console.log(half(stats));
+
+//ECMA6 Features - Create Strings using Template Literals
+console.log('** ECMA6 Features - Create Strings using Template Literals **');
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr) {
+  const failureItems = [];
+  for(let i=0; i<arr.length; i++){
+      failureItems.push(`<li class="text-warning">${arr[i]}</li>`)
+  }
+  // *** Better option ***
+  //  "use strict";
+  // change code below this line
+  // const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`);
+
+  return failureItems;
+}
+const failuresList = makeList(result.failure);
+console.log(failuresList)
