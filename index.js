@@ -210,3 +210,35 @@ function makeList(arr) {
 }
 const failuresList = makeList(result.failure);
 console.log(failuresList)
+
+//ECMA6 Features - Destructuring Assignment to Assign Variables from Arrays
+console.log('** ECMA6 Features - Destructuring via REST elements **');
+
+//CLASSIC MODE
+const getMousePositionClassic = (x, y) => ({
+  x: x,
+  y: y
+});
+
+//LITERAL DELCARATION MODE
+const getMousePosition = (x, y) => ({ x, y });
+
+//CLASSIC MODE
+const createPersonClassic = (name, age, gender) => {
+  return {
+    name: name,
+    age: age,
+    gender: gender
+  };
+};
+//LITERAL DELCARATION MODE
+const createPerson = (name, age, gender) => {
+  "use strict";
+  // change code below this line
+  return {
+    name,
+    age,
+    gender
+  };
+  // change code above this line
+};
