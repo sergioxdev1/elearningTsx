@@ -243,5 +243,5 @@ const createPerson = (name, age, gender) => {
     age,
     gender,
   };
-  createPerson('keko', 12, 'male');
 };
+console.log(createPerson('keko', 12, 'male'));
