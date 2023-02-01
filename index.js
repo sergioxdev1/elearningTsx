@@ -110,7 +110,7 @@ console.log('** ECMA6 Features - Spread operator **');
 //Copy all contents of arr1 into another array arr2 using the spread operator.
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
-arr2 = [...arr1];  // Change this line
+arr2 = [...arr1]; // Change this line
 console.log(arr2);
 //--
 const arr = [6, 89, 3, 45];
@@ -122,26 +122,26 @@ console.log('** ECMA6 Features - Destructuring Assignment **');
 const HIGH_TEMPERATURES = {
   yesterday: 75,
   today: 77,
-  tomorrow: 80
+  tomorrow: 80,
 };
 // ------  CLASSIC PROCESS ------------------------
 //const today2 = HIGH_TEMPERATURES.today;
 //const tomorrow2 = HIGH_TEMPERATURES.tomorrow;
 // --------- MODERN PROCESS -----------------------
-const {today, tomorrow} = HIGH_TEMPERATURES;
-console.log(today+tomorrow);
+const { today, tomorrow } = HIGH_TEMPERATURES;
+console.log(today + tomorrow);
 
 // ------  CLASSIC PROCESS ------------------------
 //const highToday = HIGH_TEMPERATURES.today;
-//const highTomorrow = HIGH_TEMPERATURES.tomorrow; 
+//const highTomorrow = HIGH_TEMPERATURES.tomorrow;
 // --------- MODERN PROCESS -----------------------
-const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES
-console.log(highToday+highTomorrow);
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+console.log(highToday + highTomorrow);
 
 const LOCAL_FORECAST = {
   yesterday: { low: 61, high: 75 },
   today: { low: 64, high: 77 },
-  tomorrow: { low: 68, high: 80 }
+  tomorrow: { low: 68, high: 80 },
 };
 
 //ECMA6 Features - Destructuring Assignment to Assign Vars from Nested Objects
@@ -150,7 +150,9 @@ console.log('** ECMA6 Features - Destructuring Assignment 2 **');
 //const lowToday = LOCAL_FORECAST.today.low;
 //const highToday = LOCAL_FORECAST.today.high;
 // ------ ECAM 6 ------------------------
-const { today: { low: lowToday, high: highToday2 } } = LOCAL_FORECAST;
+const {
+  today: { low: lowToday, high: highToday2 },
+} = LOCAL_FORECAST;
 console.log(LOCAL_FORECAST);
 
 //ECMA6 Features - Destructuring Assignment to Assign Variables from Arrays
@@ -159,13 +161,14 @@ console.log('** ECMA6 Features - Destructuring Assignment 2 **');
 const [a, b] = [1, 2, 3, 4, 5, 6];
 console.log(a, b);
 //move the index
-const [,,c, d,, e] = [1, 2, 3, 4, 5, 6];
+const [, , c, d, , e] = [1, 2, 3, 4, 5, 6];
 console.log(c, d, e);
 //swap values
-let ax = 8, bx = 6;
-console.log(ax,bx);
-[bx,ax] = [ax,bx]
-console.log(ax,bx);
+let ax = 8,
+  bx = 6;
+console.log(ax, bx);
+[bx, ax] = [ax, bx];
+console.log(ax, bx);
 
 //ECMA6 Features - Destructuring Assignment to Assign Variables from Arrays
 console.log('** ECMA6 Features - Destructuring via REST elements **');
@@ -181,25 +184,25 @@ const stats = {
   median: 34.54,
   mode: 23.87,
   min: -0.75,
-  average: 35.85
+  average: 35.85,
 };
 
 //This function recive a object how paramether with max and min vars inside
-const half = ({max, min}) => (max + min) / 2.0;
+const half = ({ max, min }) => (max + min) / 2.0;
 console.log(half(stats));
 
 //ECMA6 Features - Create Strings using Template Literals
 console.log('** ECMA6 Features - Create Strings using Template Literals **');
 
 const result = {
-  success: ["max-length", "no-amd", "prefer-arrow-functions"],
-  failure: ["no-var", "var-on-top", "linebreak"],
-  skipped: ["no-extra-semi", "no-dup-keys"]
+  success: ['max-length', 'no-amd', 'prefer-arrow-functions'],
+  failure: ['no-var', 'var-on-top', 'linebreak'],
+  skipped: ['no-extra-semi', 'no-dup-keys'],
 };
 function makeList(arr) {
   const failureItems = [];
-  for(let i=0; i<arr.length; i++){
-      failureItems.push(`<li class="text-warning">${arr[i]}</li>`)
+  for (let i = 0; i < arr.length; i++) {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
   }
   // *** Better option ***
   //  "use strict";
@@ -209,7 +212,7 @@ function makeList(arr) {
   return failureItems;
 }
 const failuresList = makeList(result.failure);
-console.log(failuresList)
+console.log(failuresList);
 
 //ECMA6 Features - Destructuring Assignment to Assign Variables from Arrays
 console.log('** ECMA6 Features - Destructuring via REST elements **');
@@ -217,7 +220,7 @@ console.log('** ECMA6 Features - Destructuring via REST elements **');
 //CLASSIC MODE
 const getMousePositionClassic = (x, y) => ({
   x: x,
-  y: y
+  y: y,
 });
 
 //LITERAL DELCARATION MODE
@@ -228,17 +231,17 @@ const createPersonClassic = (name, age, gender) => {
   return {
     name: name,
     age: age,
-    gender: gender
+    gender: gender,
   };
 };
 //LITERAL DELCARATION MODE
 const createPerson = (name, age, gender) => {
-  "use strict";
+  'use strict';
   // change code below this line
   return {
     name,
     age,
-    gender
+    gender,
   };
-  // change code above this line
+  createPerson('keko', 12, 'male');
 };
