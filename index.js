@@ -3,11 +3,20 @@ import './style.css';
 
 // visual sectin - Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>E-Learning Platform</h1> <p>E-Learning Platform</p>`;
+appDiv.innerHTML = `
+<h1>E-Learning Platform</h1>
+<div>
+<h3>Add numbers only with operators</h3>
+<pre>function addNumber(a, b) {
+  return a > 0 || b > 0 ? a + b : 'negative number';
+}
+</pre>
+</div>
+`;
 
 //Excersices
 
-//Add numbers only qith operators
+//Add numbers only with operators
 
 function addNumber(a, b) {
   return a > 0 || b > 0 ? a + b : 'negative number';
