@@ -254,3 +254,42 @@ const createPerson = (name, age, gender) => {
   };
 };
 console.log(createPerson('keko', 12, 'male'));
+
+//You can remove the reserved word "functions" for write more declarative and concise code.
+const bicycle = {
+  gear: 2,
+  //setGear: function (newGear) {
+  setGear(newGear) {
+    this.gear = newGear;
+  },
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+//ECMA6 Features - Class and constructor in JS
+console.log('** ECMA6 Features - Class and constructor in JS **');
+
+// Explicit constructor
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+  takeOff() {
+    console.log('To ' + this.targetPlanet + '!');
+  }
+}
+
+// Implicit constructor
+class Rocket {
+  launch() {
+    console.log('To the moon!');
+  }
+}
+
+const zeus = new SpaceShuttle('Jupiter');
+// prints To Jupiter! in console
+zeus.takeOff();
+
+const atlas = new Rocket();
+// prints To the moon! in console
+atlas.launch();
