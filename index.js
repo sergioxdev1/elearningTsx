@@ -1,6 +1,5 @@
-
 import './style.css';
-import './03regularExpression.js';
+import ejercicios01 from './03regularExpression.js';
 
 // visual sectin - Javascript code!
 const appDiv = document.getElementById('app');
@@ -16,3 +15,5 @@ appDiv.innerHTML = `
 <a href="HTML-FreecodeCamp-Mod01.html">HTML-FreecodeCamp-Mod01</a>
 </div>
 `;
+
+ejercicios01();
