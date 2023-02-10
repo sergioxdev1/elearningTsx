@@ -1,5 +1,6 @@
 // Import stylesheets
 import './style.css';
+import './03regularExpression.js';
 
 // visual sectin - Javascript code!
 const appDiv = document.getElementById('app');
