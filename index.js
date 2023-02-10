@@ -16,5 +16,3 @@ appDiv.innerHTML = `
 <a href="HTML-FreecodeCamp-Mod01.html">HTML-FreecodeCamp-Mod01</a>
 </div>
 `;
-
-
