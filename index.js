@@ -16,4 +16,4 @@ appDiv.innerHTML = `
 </div>
 `;
 
-ejercicios01();
+ejercicios01to05();
