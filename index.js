@@ -1,5 +1,5 @@
 import './style.css';
-import ejercicios01 from './03regularExpression.js';
+import ejercicios01to05 from './03regularExpression.js';
 
 // visual sectin - Javascript code!
 const appDiv = document.getElementById('app');
