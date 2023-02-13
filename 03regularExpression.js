@@ -1,5 +1,6 @@
 //Encontrar caracteres en cadenas por medio de experesiones regulares
 //METODO TEST()
+
 export default function ejercicios01to05(){
 let myString = "Hello, World!";
 let myRegex = /Hello/;
