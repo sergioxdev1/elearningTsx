@@ -2,10 +2,11 @@
 //METODO TEST()
 
 export default function ejercicios01to05(){
+
 let myString = "Hello, World!";
 let myRegex = /Hello/;
 let result = myRegex.test(myString);
-console.log("result: "+result);}
+console.log("result: "+result);
 
 let petString = "James has a pet cat.";
 let petRegex = /cat|dog|bird|fish/; // Cambia esta línea
@@ -23,4 +24,12 @@ console.log("result3: "+result3);
 
 let extractStr = "Extract the word 'coding' from this string.";
 let codingRegex = /coding/; // Encuentra esta palabra en la frase
-let result = extractStr.match(codingRegex);
+let result4 = extractStr.match(codingRegex);
+console.log("result4: "+result4);
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // Extraer la palabra la veces que aparezca sin importar su capitalizacion
+let result5 = twinkleStar.match(starRegex);
+console.log("result5: "+result5);
+
+}
