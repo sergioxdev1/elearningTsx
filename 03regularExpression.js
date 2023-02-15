@@ -20,3 +20,7 @@ console.log("result3: "+result3);
 fccRegex = /FREECODECAMP/i;// Con el flag "i" 
 result3 = fccRegex.test(myString2);
 console.log("result3: "+result3);
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Encuentra esta palabra en la frase
+let result = extractStr.match(codingRegex);
