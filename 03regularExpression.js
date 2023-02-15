@@ -32,4 +32,9 @@ let starRegex = /Twinkle/gi; // Extraer la palabra la veces que aparezca sin imp
 let result5 = twinkleStar.match(starRegex);
 console.log("result5: "+result5);
 
+let exampleStr2 = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Encuentra cualquier texto qte tenga "un"
+let result6 = unRegex.test(exampleStr2);
+console.log("result6: "+result6);
+
 }
