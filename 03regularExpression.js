@@ -37,4 +37,14 @@ let unRegex = /.un/; // Encuentra cualquier texto qte tenga "un"
 let result6 = unRegex.test(exampleStr2);
 console.log("result6: "+result6);
 
+/* (7)
+Usa una clase de caracteres con las vocales (a, e, i, o u) en tu expresión regular vowelRegex para encontrar todas las vocales en la cadena quoteSample.
+--
+Nota: Asegúrate de hacer coincidir tanto las vocales mayúsculas como minúsculas.
+*/
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; 
+let result7 = quoteSample.match(vowelRegex);
+console.log("result7: "+result7);
+
 }
