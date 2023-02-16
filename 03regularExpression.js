@@ -47,4 +47,12 @@ let vowelRegex = /[aeiou]/gi;
 let result7 = quoteSample.match(vowelRegex);
 console.log("result7: "+result7);
 
+/* (8)
+Haz coincidir todas las letras en la cadena quoteSample.
+Nota: Asegúrate de hacer coincidir tanto las letras mayúsculas como minúsculas.
+*/
+let quoteSample8 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex8 = /[a-z]/ig; // Cambia esta línea
+let result8 = quoteSample8.match(alphabetRegex8); // Cambia esta línea
+console.log("result 8: "+result8);
 }
