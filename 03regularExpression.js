@@ -26,15 +26,25 @@ export default function ejercicios01to05() {
   let result4 = extractStr.match(codingRegex);
   console.log('result4: ' + result4);
 
-  let twinkleStar = 'Twinkle, twinkle, little star';
-  let starRegex = /Twinkle/gi; // Extraer la palabra la veces que aparezca sin importar su capitalizacion
-  let result5 = twinkleStar.match(starRegex);
-  console.log('result5: ' + result5);
+  /* (5)
+  Utilizando la expresión regular starRegex, encuentra y extrae ambas palabras Twinkle de la cadena twinkleStar.
+  --
+  Nota
+  En tu expresión regular puedes utilizar múltiples banderas, como /search/gi
+  */
+  let twinkleStar5 = 'Twinkle, twinkle, little star';
+  let starRegex5 = /Twinkle/gi;
+  let result5 = twinkleStar5.match(starRegex5);
+  console.log('result 5: ' + result5);
 
-  let exampleStr2 = "Let's have fun with regular expressions!";
-  let unRegex = /.un/; // Encuentra cualquier texto qte tenga "un"
-  let result6 = unRegex.test(exampleStr2);
-  console.log('result6: ' + result6);
+  /* (6)
+  Completa la expresión regular unRegex para que coincida con las cadenas run, sun, fun, pun, nun, y bun. Tu expresión regular debe usar el carácter de comodín.
+  */
+
+  let exampleStr6 = "Let's have fun with regular expressions!";
+  let unRegex6 = /.un/; 
+  let result6 = unRegex6.test(exampleStr6);
+  console.log('result 6: ' + result6);
 
   /* (7)
   Usa una clase de caracteres con las vocales (a, e, i, o u) en tu expresión regular vowelRegex para encontrar todas las vocales en la cadena quoteSample.
