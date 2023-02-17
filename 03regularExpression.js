@@ -63,4 +63,12 @@ Crea una sola expresión regular que coincida con un rango de letras entre h y s
   let myRegex9 = /[h-s2-6]/gi;
   let result9 = quoteSample9.match(myRegex9);
   console.log('result 9: ' + result9);
+
+  /* (10)
+   Crea una sola expresión regular que coincida con todos los caracteres que no son un número o una vocal. Recuerda incluir las banderas apropiadas en la expresión regular.
+   */
+   let quoteSample10 = "3 blind mice.";
+   let myRegex10 = /[^aeiou0-9]/gi;
+   let result10 = quoteSample10.match(myRegex10);
+   console.log('result 10: ' + result10);
 }
