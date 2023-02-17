@@ -37,28 +37,28 @@ export default function ejercicios01to05() {
   console.log('result6: ' + result6);
 
   /* (7)
-Usa una clase de caracteres con las vocales (a, e, i, o u) en tu expresión regular vowelRegex para encontrar todas las vocales en la cadena quoteSample.
---
-Nota: Asegúrate de hacer coincidir tanto las vocales mayúsculas como minúsculas.
-*/
-  let quoteSample =
+  Usa una clase de caracteres con las vocales (a, e, i, o u) en tu expresión regular vowelRegex para encontrar todas las vocales en la cadena quoteSample.
+  --
+  Nota: Asegúrate de hacer coincidir tanto las vocales mayúsculas como minúsculas.
+  */
+  let quoteSample7 =
     'Beware of bugs in the above code; I have only proved it correct, not tried it.';
-  let vowelRegex = /[aeiou]/gi;
-  let result7 = quoteSample.match(vowelRegex);
-  console.log('result7: ' + result7);
+  let vowelRegex7 = /[aeiou]/gi;
+  let result7 = quoteSample7.match(vowelRegex7);
+  console.log('result 7: ' + result7);
 
   /* (8)
-Haz coincidir todas las letras en la cadena quoteSample.
-Nota: Asegúrate de hacer coincidir tanto las letras mayúsculas como minúsculas.
-*/
+  Haz coincidir todas las letras en la cadena quoteSample.
+  Nota: Asegúrate de hacer coincidir tanto las letras mayúsculas como minúsculas.
+  */
   let quoteSample8 = 'The quick brown fox jumps over the lazy dog.';
   let alphabetRegex8 = /[a-z]/gi;
   let result8 = quoteSample8.match(alphabetRegex8);
   console.log('result 8: ' + result8);
 
   /* (9)
-Crea una sola expresión regular que coincida con un rango de letras entre h y s, y un rango de números entre 2 y 6. Recuerda incluir las banderas apropiadas en la expresión regular.
-*/
+  Crea una sola expresión regular que coincida con un rango de letras entre h y s, y un rango de números entre 2 y 6. Recuerda incluir las banderas apropiadas en la expresión regular.
+  */
   let quoteSample9 = 'Blueberry 3.141592653s are delicious.';
   let myRegex9 = /[h-s2-6]/gi;
   let result9 = quoteSample9.match(myRegex9);
