@@ -56,8 +56,8 @@ Nota: Asegúrate de hacer coincidir tanto las letras mayúsculas como minúscula
   let result8 = quoteSample8.match(alphabetRegex8);
   console.log('result 8: ' + result8);
 
-  /*
-
+  /* (9)
+Crea una sola expresión regular que coincida con un rango de letras entre h y s, y un rango de números entre 2 y 6. Recuerda incluir las banderas apropiadas en la expresión regular.
 */
   let quoteSample9 = 'Blueberry 3.141592653s are delicious.';
   let myRegex9 = /[h-s2-6]/gi;
