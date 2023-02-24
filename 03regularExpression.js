@@ -88,4 +88,11 @@ export default function ejercicios01to05() {
     let difficultSpelling = "Mississippi";
     let myRegex = /s+/g; // Cambia esta línea
     let result = difficultSpelling.match(myRegex);
+
+    /* (12)
+    Para este desafío, chewieQuote ha sido inicializada entre bastidores con la cadena Aaaaaaaaaaaaaaaarrrgh!. Crea una expresión regular chewieRegex que utilice el carácter * para encontrar el carácter A mayúscula seguido inmediatamente por cero o más caracteres a minúscula en chewieQuote. Tu expresión regular no necesita banderas o clases de caracteres, y no debe coincidir con ninguna de las otras comillas.
+    */
+    let chewieRegex = /Aa*/;
+    let result = chewieQuote.match(chewieRegex);
+   
 }
