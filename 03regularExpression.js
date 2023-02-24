@@ -81,4 +81,11 @@ export default function ejercicios01to05() {
    let myRegex10 = /[^aeiou0-9]/gi;
    let result10 = quoteSample10.match(myRegex10);
    console.log('result 10: ' + result10);
+
+   /* (11)
+    Quieres encontrar coincidencias cuando la letra s ocurre una o más veces en Mississippi. Escribe una expresión regular que utilice el signo +.
+   */
+    let difficultSpelling = "Mississippi";
+    let myRegex = /s+/g; // Cambia esta línea
+    let result = difficultSpelling.match(myRegex);
 }
