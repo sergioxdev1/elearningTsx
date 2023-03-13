@@ -6,6 +6,7 @@ Make the promise handle success and failure. If responseFromServer is true, call
 
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer represents a response from a server
+  
   let responseFromServer;
 
   responseFromServer ? resolve('We got the data') : reject('Data not received');
